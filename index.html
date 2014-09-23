@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tw" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>InfinityScroll</title>
+  <link rel="stylesheet" href="./dist/css/all.css">
+</head>
+<body>
+  <header>
+    <span class="logo">我是logo</span>
+    <div class="icons">
+      <i>iconA</i>
+      <i>iconB</i>
+      <i class="active">ClickMe</i>
+    </div>
+    <div class="lists">
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+      <div class="list">
+        <img src="./images/avatar92.jpg" alt="">
+        <p>文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p>
+      </div>
+    </div>
+  </header>
+  <main ng-controller="testB">
+    <div ng-repeat="data in datas track by $index">
+      <p><span>{{$index + 1}}:</span><span>{{data.text}}</span></p>
+    </div> 
+  </main>
+  <!-- <footer>我是footer</footer> -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./javascripts/scroll-lock.js"></script>
+  <script src="./javascripts/test.js"></script>
+</body>
+</html>

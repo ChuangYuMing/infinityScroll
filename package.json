@@ -1,0 +1,18 @@
+{
+  "name": "test_space",
+  "version": "0.0.0",
+  "description": "my code test space",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ChuangYuMing",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.3.5",
+    "gulp": "^3.8.7",
+    "gulp-compass": "^1.3.1", 
+    "gulp-sourcemaps": "^1.1.1",
+    "gulp-util": "^3.0.0"
+  }
+}
